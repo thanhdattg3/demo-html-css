@@ -1,0 +1,286 @@
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+}
+
+
+.banner .avt img {
+   border-radius: 50%;
+   width: 190px;
+   height: 190px;
+}
+
+.banner {
+   padding: 20px 20px 0px 20px;
+   position: relative;
+}
+
+.banner .image {
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+
+.banner .info {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-align: center;
+}
+
+.banner .info h2 {
+   font-size: 50px;
+}
+
+.test {
+   margin: 0px;
+   height: 40px;
+   line-height: 40px;
+
+}
+
+.test ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   width: 80%;
+   margin: auto;
+   text-align: center;
+}
+
+.test ul li {
+   width: 150px;
+   padding: 10px 20px;
+   border-left: 1px solid gray;
+}
+
+.test ul li:last-child {
+   border-right: 1px solid gray;
+
+}
+
+.item-center {
+   flex-grow: 1;
+   padding: 0;
+   margin: 0;
+}
+
+.test ul li {
+   position: relative;
+}
+
+.test ul li::after {
+   content: '';
+   width: 0;
+   height: 1px;
+   background-color: gray;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%);
+   transition: all 0.5s ease-in-out;
+}
+
+.test ul li:hover::after {
+   width: 100%;
+}
+
+.item-center:hover::after {
+   display: none;
+}
+
+
+.avt {
+   position: relative;
+}
+.avt img {
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: absolute;
+   left: 50%;
+   border: solid white 5px;
+   top: 50%;
+   z-index: 3;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   transform: translate(-50%, -50%);
+}
+
+.target-info {
+   margin: 10%;
+}
+
+.target :first-child {
+   font-size: 30px;
+}
+
+.info-1 :first-child {
+   font-size: 30px;
+}
+
+.info-1 ul :nth-child(1) {
+   font-size: 20px;
+}
+
+.info-3 {
+   width: 50px;
+   height: 100px;
+}
+
+.dash {
+   width: 40px;
+   height: 3px;
+   background-color: gray;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+.dash-1 {
+   width: 40px;
+   height: 3px;
+   background-color: gray;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+.dash-2 {
+   width: 40px;
+   height: 3px;
+   background-color: gray;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+.dash-3 {
+   width: 40px;
+   height: 3px;
+   background-color: gray;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+.dash-4 {
+   width: 40px;
+   height: 3px;
+   background-color: gray;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+.dash-5 {
+   width: 40px;
+   height: 3px;
+   background-color: gray;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+.border {
+   height: 100%;
+}
+
+.exp {
+   margin-bottom: 20px;
+}
+
+.background-info {
+   position: relative;
+}
+
+.border-radius {
+   border-radius: 50%;
+   background-color: #33B2FF;
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   left: -20px;
+   top: 3px;
+}
+
+.i-text {
+   font-size: 15px;
+}
+
+.p-text {
+   font-size: 15px;
+}
+
+.container img {
+   width: 50%;
+   margin-bottom: 10px;
+}
+
+
+
+.project__item {
+   width: 90%;
+}
+
+.project__item img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+}
+
+.project__item {
+   border: solid gray 1px;
+   justify-content: space-between;
+   height: 100%;
+}
+
+.project__item-1 {
+   border-bottom: solid gray 1px;
+   width: 100%;
+   padding-bottom: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   justify-content: space-between;
+}
+
+.text-align-center {
+   border-bottom: solid gray 1px;
+   padding-left: 10px;
+}
+
+.reward__item {
+   border-right: solid yellow 2px;
+}
+
+.reward__box {
+   border-bottom: solid yellow 2px;
+}
+
+.text__reward img {
+   padding-top: 20px;
+}
+
+.text__reward h4 {
+   padding-top: 20px;
+   object-fit: cover;
+}
+
+@media only screen and (max-width:768px) {
+   .reward__box {
+      border-bottom: none;
+   }
+
+   .reward__item {
+      border-right: none;
+   }
+
+   .item-center {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .avt {
+      display:none;
+   }
+}
+
+.item-center {
+   position: relative;
+}
